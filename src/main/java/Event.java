@@ -10,13 +10,31 @@ public class Event implements EventHandler {
 
     }
 
-    public void setPlaylist(Playlist playlist) {
+    public void setPlaylist() {
         Scanner variant = new Scanner(System.in);
         System.out.println("Choose your dest... Playlist:\n1.Ballet Music\n2.Waltz Music\n3.INDUSTRIAL TECHNO");
         String decision = variant.nextLine();
 
-        if (decision.equals("3")) {
+        switch (decision) {
+            case "3": {
+                Playlist playlist1 = new Playlist(DanceType.RAVEDANCER, "Techno Dance");
 
+                break;
+            }
+            case "2": {
+                Playlist playlist1 = new Playlist(DanceType.WALTZ, "Waltz Dance");
+
+                break;
+            }
+            case "1": {
+                Playlist playlist1 = new Playlist(DanceType.BALLET, "Ballet Dance");
+
+                break;
+            }
+            default:
+                System.out.println("Error. Not acceptable variant.");
+                break;
         }
+        System.out.println("Success. ");
     }
 }

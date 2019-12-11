@@ -6,7 +6,7 @@ public interface EventHandler {
 
     void setNewPairs(ArrayList<Dancer> dancers, Playlist playlist);
 
-    void setPlaylist(Playlist playlist);
+    void setPlaylist();
 
 
 

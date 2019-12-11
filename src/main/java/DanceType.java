@@ -7,6 +7,7 @@ public enum DanceType {
     BALLET, WALTZ, RAVEDANCER;
 
 
+
     private int dancersMaxNumber;
     private Map<GENDER, Integer> gender = new HashMap<GENDER, Integer>();
 

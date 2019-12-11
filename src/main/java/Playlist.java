@@ -2,20 +2,20 @@ import java.util.ArrayList;
 
 public class Playlist {
 
-    private ArrayList<DanceType> playlistGenre;
+    private DanceType playlistGenre;
 
     private String nameOfPlaylist;
 
-    public Playlist(ArrayList<DanceType> playlistGenre, String nameOfPlaylist) {
+    public Playlist(DanceType playlistGenre, String nameOfPlaylist) {
         this.playlistGenre = playlistGenre;
         this.nameOfPlaylist = nameOfPlaylist;
     }
 
-    public ArrayList<DanceType> getPlaylistGenre() {
+    public DanceType getPlaylistGenre() {
         return playlistGenre;
     }
 
-    public void setPlaylistGenre(ArrayList<DanceType> playlistGenre) {
+    public void setPlaylistGenre(DanceType playlistGenre) {
         this.playlistGenre = playlistGenre;
     }
 
